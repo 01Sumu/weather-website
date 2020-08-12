@@ -1,0 +1,87 @@
+body{
+    color: #333333;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("../img/partlycould.jpg");
+    background-size: 100%;  
+}
+
+.main-content{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.content{
+    margin-top: 80px;
+    margin-bottom: 90px;
+    font-weight: bold;
+    color:#143233 ;
+    font-size: 20px;
+}
+
+footer{
+    color: #143233;
+    margin-top: 16px;
+    border-top: 1px solid #eeeeee;
+    padding: 16px 0;
+    text-align: center;
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom: 48px;
+    text-align: center;
+    font-size: 35px;
+}
+
+h1{
+    margin-bottom: 16px;
+    font-size: 80px;
+}
+
+header a{
+    text-decoration: none;
+    margin-right: 16px;
+    color: #888888;
+}
+
+
+.potrait{
+    width: 250px;
+}
+
+input{
+    width: 130px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color:white;
+    opacity: 0.3;
+    background-image: url('/img/search.png');
+    background-size: 45px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+input:focus {
+    width: 100%;
+}
+
+input::placeholder{
+    color:black;
+    text-align: center;
+    opacity: 1;
+    font-weight: bold;
+}
+
+#msg-1,#msg-2{
+    font-weight: bold;
+    font-size: 20px;
+}
