@@ -75,7 +75,7 @@ app.get('/weather',(req,res)=>{
 
 app.get('*',(req,res)=>{
     res.render('error',{
-        title:'My 404 Page'
+        title:'404 Page'
     })
 })
 
