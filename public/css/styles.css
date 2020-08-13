@@ -9,7 +9,8 @@ body{
     flex-direction: column;
     min-height: 100vh;
     background-image: url("../img/partlycould.jpg");
-    background-size: 100%;  
+    background-size: cover;  
+    background-repeat: no-repeat;
 }
 
 .main-content{
@@ -17,13 +18,20 @@ body{
     text-align: center;
 }
 
-.content{
+.contentindex{
     margin-top: 80px;
     margin-bottom: 90px;
     font-weight: bold;
     color:#143233 ;
     font-size: 20px;
 }
+.content{
+    margin-top: 80px;
+    margin-bottom: 90px;
+    font-weight: bold;
+    color: #143233;
+    font-size: 20px;
+} 
 
 footer{
     color: #143233;
@@ -54,6 +62,7 @@ header a{
 
 .potrait{
     width: 250px;
+    opacity:0.9 ;
 }
 
 input{
@@ -69,19 +78,70 @@ input{
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     transition: width 0.4s ease-in-out;
+    text-align: center;
 }
 input:focus {
-    width: 100%;
+    width: 70%;
 }
 
 input::placeholder{
     color:black;
     text-align: center;
     opacity: 1;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #msg-1,#msg-2{
     font-weight: bold;
     font-size: 20px;
 }
+
+@media(max-device-width: 600px)
+{
+    body{
+        background-image: url("https://media.giphy.com/media/3o7aCRZYNerX4ovPwI/giphy.gif");
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    } 
+    .contentindex{
+        margin-top: 80px;
+        margin-bottom: 90px;
+        font-size: 45px;
+    }
+    .content{
+        margin-top: 80px;
+        margin-bottom: 90px;
+        font-size: 40px;
+        opacity: 0.8;
+        color: white;
+    }
+    h1{
+        margin-bottom: 50px;
+        font-size: 110px;
+    }
+    input{
+        width: 300px;
+        color: white;
+        background-color: black;
+    }
+    input::placeholder{
+        color: white;
+    }
+    footer{
+        color: white;
+    }
+    #msg-1,#msg-2{
+        font-weight: bold;
+        font-size: 40px;
+        color: white;
+    } 
+}
+
+/* @media only screen and (max-device-width:650px) and (max-device-height:700px)
+{
+    body{
+        background-image: url("https://media.giphy.com/media/3o7aCRZYNerX4ovPwI/giphy.gif");
+        background-size: 100% 100%;  
+        background-repeat: no-repeat;
+    } 
+} */
